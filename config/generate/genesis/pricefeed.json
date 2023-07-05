@@ -73,15 +73,15 @@
       },
       {
         "active": true,
-        "base_asset": "hard",
-        "market_id": "hard:usd",
+        "base_asset": "jinx",
+        "market_id": "jinx:usd",
         "oracles": ["$oracle"],
         "quote_asset": "usd"
       },
       {
         "active": true,
-        "base_asset": "hard",
-        "market_id": "hard:usd:30",
+        "base_asset": "jinx",
+        "market_id": "jinx:usd:30",
         "oracles": ["$oracle"],
         "quote_asset": "usd"
       },
@@ -143,22 +143,22 @@
       },
       {
         "active": true,
-        "base_asset": "usdx",
-        "market_id": "usdx:usd",
+        "base_asset": "musd",
+        "market_id": "musd:usd",
         "oracles": ["$oracle"],
         "quote_asset": "usd"
       },
       {
         "active": true,
-        "base_asset": "usdx",
-        "market_id": "usdx:usd:30",
+        "base_asset": "musd",
+        "market_id": "musd:usd:30",
         "oracles": ["$oracle"],
         "quote_asset": "usd"
       },
       {
         "active": true,
-        "base_asset": "usdx",
-        "market_id": "usdx:usd:720",
+        "base_asset": "musd",
+        "market_id": "musd:usd:720",
         "oracles": ["$oracle"],
         "quote_asset": "usd"
       },
@@ -291,19 +291,19 @@
     },
     {
       "expiry": "2023-07-20T00:00:00Z",
-      "market_id": "usdx:usd",
+      "market_id": "musd:usd",
       "oracle_address": "$oracle",
       "price": "1.000000000000000000"
     },
     {
       "expiry": "2023-07-20T00:00:00Z",
-      "market_id": "usdx:usd:30",
+      "market_id": "musd:usd:30",
       "oracle_address": "$oracle",
       "price": "1.000000000000000000"
     },
     {
       "expiry": "2023-07-20T00:00:00Z",
-      "market_id": "usdx:usd:720",
+      "market_id": "musd:usd:720",
       "oracle_address": "$oracle",
       "price": "1.000000000000000000"
     },
@@ -321,13 +321,13 @@
     },
     {
       "expiry": "2023-07-20T00:00:00Z",
-      "market_id": "hard:usd",
+      "market_id": "jinx:usd",
       "oracle_address": "$oracle",
       "price": "0.500000000000000000"
     },
     {
       "expiry": "2023-07-20T00:00:00Z",
-      "market_id": "hard:usd:30",
+      "market_id": "jinx:usd:30",
       "oracle_address": "$oracle",
       "price": "0.500000000000000000"
     },

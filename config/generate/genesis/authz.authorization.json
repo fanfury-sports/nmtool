@@ -137,7 +137,7 @@
   {
     "authorization": {
       "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-      "msg": "/nemo.hard.v1beta1.MsgBorrow"
+      "msg": "/nemo.jinx.v1beta1.MsgBorrow"
     },
     "expiration": null,
     "grantee": "fury10d07y265gmmuvt4z0w9aw880jnsr700j2f629u",
@@ -146,7 +146,7 @@
   {
     "authorization": {
       "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-      "msg": "/nemo.hard.v1beta1.MsgDeposit"
+      "msg": "/nemo.jinx.v1beta1.MsgDeposit"
     },
     "expiration": null,
     "grantee": "fury10d07y265gmmuvt4z0w9aw880jnsr700j2f629u",
@@ -155,7 +155,7 @@
   {
     "authorization": {
       "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-      "msg": "/nemo.hard.v1beta1.MsgRepay"
+      "msg": "/nemo.jinx.v1beta1.MsgRepay"
     },
     "expiration": null,
     "grantee": "fury10d07y265gmmuvt4z0w9aw880jnsr700j2f629u",
@@ -164,7 +164,7 @@
   {
     "authorization": {
       "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-      "msg": "/nemo.hard.v1beta1.MsgWithdraw"
+      "msg": "/nemo.jinx.v1beta1.MsgWithdraw"
     },
     "expiration": null,
     "grantee": "fury10d07y265gmmuvt4z0w9aw880jnsr700j2f629u",
