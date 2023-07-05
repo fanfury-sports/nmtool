@@ -4,7 +4,7 @@
     "conversion_factor": "8",
     "debt_limit": {
       "amount": "20000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "bnb",
     "liquidation_market_id": "bnb:usd:30",
@@ -21,7 +21,7 @@
     "conversion_factor": "8",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "btcb",
     "liquidation_market_id": "btc:usd:30",
@@ -38,7 +38,7 @@
     "type": "xrpb-a",
     "liquidation_ratio": "1.500000000000000000",
     "debt_limit": {
-      "denom": "usdx",
+      "denom": "musd",
       "amount": "1000000000000"
     },
     "stability_fee": "1.000000001547125958",
@@ -55,7 +55,7 @@
     "type": "busd-a",
     "liquidation_ratio": "1.010000000000000000",
     "debt_limit": {
-      "denom": "usdx",
+      "denom": "musd",
       "amount": "3000000000000"
     },
     "stability_fee": "1.000000000000000000",
@@ -72,7 +72,7 @@
     "type": "busd-b",
     "liquidation_ratio": "1.100000000000000000",
     "debt_limit": {
-      "denom": "usdx",
+      "denom": "musd",
       "amount": "3000000000000"
     },
     "stability_fee": "1.000000012857214317",
@@ -89,7 +89,7 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "ufury",
     "liquidation_market_id": "nemo:usd:30",
@@ -106,7 +106,7 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "ibc/C72DE26FFF16DE62BE2784E12229BDF5F4465CE8B10530426D6DB53255FF01B2",
     "liquidation_market_id": "luna:usd:30",
@@ -123,7 +123,7 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "ibc/4129EB76C01ED14052054BB975DE0C6C5010E12FFD9253C20C58BCD828BEE9A5",
     "liquidation_market_id": "akt:usd:30",
@@ -140,7 +140,7 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518",
     "liquidation_market_id": "osmo:usd:30",
@@ -157,7 +157,7 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
     "liquidation_market_id": "atom:usd:30",
@@ -174,24 +174,24 @@
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
-    "denom": "hard",
-    "liquidation_market_id": "hard:usd:30",
+    "denom": "jinx",
+    "liquidation_market_id": "jinx:usd:30",
     "liquidation_penalty": "0.050000000000000000",
     "liquidation_ratio": "1.500000000000000000",
     "keeper_reward_percentage": "0.01",
     "check_collateralization_index_count": "10",
-    "spot_market_id": "hard:usd",
+    "spot_market_id": "jinx:usd",
     "stability_fee": "1.000000000782997700",
-    "type": "hard-a"
+    "type": "jinx-a"
   },
   {
     "auction_size": "50000000000",
     "conversion_factor": "6",
     "debt_limit": {
       "amount": "2000000000000",
-      "denom": "usdx"
+      "denom": "musd"
     },
     "denom": "swp",
     "liquidation_market_id": "swp:usd:30",
@@ -208,7 +208,7 @@
     "type": "hbtc-a",
     "liquidation_ratio": "1.500000000000000000",
     "debt_limit": {
-      "denom": "usdx",
+      "denom": "musd",
       "amount": "10000000000000"
     },
     "stability_fee": "1.000000001547125958",

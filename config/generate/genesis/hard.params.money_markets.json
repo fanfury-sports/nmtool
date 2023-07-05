@@ -1,12 +1,12 @@
 [
   {
-    "denom": "usdx",
+    "denom": "musd",
     "borrow_limit": {
       "has_max_limit": false,
       "maximum_limit": "20000000",
       "loan_to_value": "0.80"
     },
-    "spot_market_id": "usdx:usd",
+    "spot_market_id": "musd:usd",
     "conversion_factor": "1000000",
     "interest_rate_model": {
       "base_rate_apy": "0.05",

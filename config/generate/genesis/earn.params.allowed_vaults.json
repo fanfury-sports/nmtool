@@ -1,5 +1,5 @@
 [
-  { "denom": "usdx", "strategies": ["STRATEGY_TYPE_HARD"] },
+  { "denom": "musd", "strategies": ["STRATEGY_TYPE_JINX"] },
   { "denom": "ufury", "strategies": ["STRATEGY_TYPE_SAVINGS"] },
   { "denom": "bfury", "strategies": ["STRATEGY_TYPE_SAVINGS"] },
   { "denom": "erc20/multichain/usdc", "strategies": ["STRATEGY_TYPE_SAVINGS"] }

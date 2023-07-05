@@ -141,8 +141,8 @@
     "nested_types": []
   },
   {
-    "msg_type_url": "/nemo.incentive.v1beta1.MsgClaimUSDXMintingReward",
-    "msg_value_type_name": "MsgValueIncentiveClaimUSDXMintingReward",
+    "msg_type_url": "/nemo.incentive.v1beta1.MsgClaimMUSDMintingReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimMUSDMintingReward",
     "value_types": [
       {
         "name": "sender",
@@ -156,8 +156,8 @@
     "nested_types": []
   },
   {
-    "msg_type_url": "/nemo.incentive.v1beta1.MsgClaimHardReward",
-    "msg_value_type_name": "MsgValueIncentiveClaimHardReward",
+    "msg_type_url": "/nemo.incentive.v1beta1.MsgClaimJinxReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimJinxReward",
     "value_types": [
       {
         "name": "sender",
@@ -453,8 +453,8 @@
     "nested_types": []
   },
   {
-    "msg_type_url": "/nemo.hard.v1beta1.MsgWithdraw",
-    "msg_value_type_name": "MsgValueHardWithdraw",
+    "msg_type_url": "/nemo.jinx.v1beta1.MsgWithdraw",
+    "msg_value_type_name": "MsgValueJinxWithdraw",
     "value_types": [
       {
         "name": "depositor",
@@ -468,8 +468,8 @@
     "nested_types": []
   },
   {
-    "msg_type_url": "/nemo.hard.v1beta1.MsgDeposit",
-    "msg_value_type_name": "MsgValueHardDeposit",
+    "msg_type_url": "/nemo.jinx.v1beta1.MsgDeposit",
+    "msg_value_type_name": "MsgValueJinxDeposit",
     "value_types": [
       {
         "name": "depositor",

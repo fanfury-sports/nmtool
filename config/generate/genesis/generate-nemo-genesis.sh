@@ -225,7 +225,7 @@ add-eth-genesis-account-key user '.nemo.users.user' 1000000000ufury
 
 
 ibcdenom='ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2' # ATOM on mainnet
-whalefunds=1000000000000ufury,10000000000000000bfury-"$valoper",10000000000000000bnb,10000000000000000btcb,10000000000000000busd,1000000000000000000hard,1000000000000000000swp,10000000000000000usdx,10000000000000000xrpb,10000000000000000"$ibcdenom"
+whalefunds=1000000000000ufury,10000000000000000bfury-"$valoper",10000000000000000bnb,10000000000000000btcb,10000000000000000busd,1000000000000000000jinx,1000000000000000000swp,10000000000000000musd,10000000000000000xrpb,10000000000000000"$ibcdenom"
 # whale account
 whale=$(get-address '.nemo.users.whale')
 export whale
@@ -255,9 +255,9 @@ add-eth-genesis-account-key bridge_relayer '.nemo.users.bridge_relayer' 10000000
 
 # Accounts without keys
 # issuance module
-add-genesis-account fury1cj7njkw2g9fqx4e768zc75dp9sks8u9zlc7m2x 1000000000000ufury,1000000000000swp,1000000000000hard
+add-genesis-account fury1cj7njkw2g9fqx4e768zc75dp9sks8u9zlc7m2x 1000000000000ufury,1000000000000swp,1000000000000jinx
 # swap module
-add-genesis-account fury1mfru9azs5nua2wxcd4sq64g5nt7nn4n8u5n4a5 5000000000ufury,200000000btcb,1000000000hard,5000000000swp,103000000000usdx
+add-genesis-account fury1mfru9azs5nua2wxcd4sq64g5nt7nn4n8u5n4a5 5000000000ufury,200000000btcb,1000000000jinx,5000000000swp,103000000000musd
 
 # override `auth.accounts` array.
 # DO NOT CALL `add-genesis-account` AFTER HERE UNLESS IT IS AN EthAccount
@@ -351,8 +351,8 @@ jq '.app_state.feemarket.params.no_base_fee = true' $DATA/config/genesis.json|sp
 # x/gov: lower voting period to 30s
 jq '.app_state.gov.voting_params.voting_period = "30s"' $DATA/config/genesis.json|sponge $DATA/config/genesis.json
 
-# x/hard: money markets (Nemo Lend)
-set-app-state hard.params.money_markets
+# x/jinx: money markets (Nemo Lend)
+set-app-state jinx.params.money_markets
 
 # x/incentive params
 if [ "$SKIP_INCENTIVES" != true ]; then
@@ -386,7 +386,7 @@ set-app-state pricefeed
 
 # x/savings supported denoms
 jq '.app_state.savings.params.supported_denoms =
-  [ "bfury-'"$valoper"'", "usdx", "ufury", "hard", "swp", "bfury", "erc20/multichain/usdc" ]' \
+  [ "bfury-'"$valoper"'", "musd", "ufury", "jinx", "swp", "bfury", "erc20/multichain/usdc" ]' \
   $DATA/config/genesis.json | sponge $DATA/config/genesis.json
 
 # x/swap (uses $whale)

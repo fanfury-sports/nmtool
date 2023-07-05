@@ -197,7 +197,7 @@
             "denom": "bnb",
             "liquidation_ratio": "1.500000000000000000",
             "debt_limit": {
-              "denom": "usdx",
+              "denom": "musd",
               "amount": "2000000000000"
             },
             "stability_fee": "1.000000000782997700",
@@ -214,13 +214,13 @@
         "debt_param": {
           "conversion_factor": "6",
           "debt_floor": "10000000",
-          "denom": "usdx",
+          "denom": "musd",
           "reference_asset": "usd",
           "savings_rate": "0.950000000000000000"
         },
         "global_debt_limit": {
           "amount": "2000000000000",
-          "denom": "usdx"
+          "denom": "musd"
         },
         "savings_distribution_frequency": "43200000000000",
         "surplus_auction_lot": "10000000000",

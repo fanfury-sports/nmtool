@@ -29,8 +29,8 @@
             { "subspace": "incentive", "key": "Active" },
             { "subspace": "nemodist", "key": "Active" },
             { "subspace": "pricefeed", "key": "Markets" },
-            { "subspace": "hard", "key": "MoneyMarkets" },
-            { "subspace": "hard", "key": "MinimumBorrowUSDValue" }
+            { "subspace": "jinx", "key": "MoneyMarkets" },
+            { "subspace": "jinx", "key": "MinimumBorrowUSDValue" }
           ]
         }
       ],
@@ -69,18 +69,18 @@
     "@type": "/nemo.committee.v1beta1.TokenCommittee",
     "base_committee": {
       "id": "4",
-      "description": "HARD Governance Committee",
+      "description": "JINX Governance Committee",
       "members": ["$committee"],
       "permissions": [
         { "@type": "/nemo.committee.v1beta1.TextPermission" },
         {
           "@type": "/nemo.committee.v1beta1.ParamsChangePermission",
           "allowed_params_changes": [
-            { "subspace": "hard", "key": "MoneyMarkets" },
-            { "subspace": "hard", "key": "MinimumBorrowUSDValue" },
-            { "subspace": "incentive", "key": "HardSupplyRewardPeriods" },
-            { "subspace": "incentive", "key": "HardBorrowRewardPeriods" },
-            { "subspace": "incentive", "key": "HardDelegatorRewardPeriods" }
+            { "subspace": "jinx", "key": "MoneyMarkets" },
+            { "subspace": "jinx", "key": "MinimumBorrowUSDValue" },
+            { "subspace": "incentive", "key": "JinxSupplyRewardPeriods" },
+            { "subspace": "incentive", "key": "JinxBorrowRewardPeriods" },
+            { "subspace": "incentive", "key": "JinxDelegatorRewardPeriods" }
           ]
         }
       ],
@@ -89,7 +89,7 @@
       "tally_option": "TALLY_OPTION_DEADLINE"
     },
     "quorum": "0.330000000000000000",
-    "tally_denom": "hard"
+    "tally_denom": "jinx"
   },
   {
     "@type": "/nemo.committee.v1beta1.TokenCommittee",
