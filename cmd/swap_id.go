@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"
 
-	"github.com/incubus-network/kvtool/binance"
+	"github.com/fanfury-sports/nmtool/binance"
 )
 
 var (
