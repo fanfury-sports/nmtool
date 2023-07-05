@@ -14,6 +14,7 @@ require (
 	github.com/tendermint/classic v0.0.0-20201012085102-0a11024b2668
 	github.com/tendermint/tendermint v0.34.27
 	google.golang.org/grpc v1.53.0
+	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -174,7 +175,6 @@ require (
 	google.golang.org/protobuf v1.28.2-0.20230208135220-49eaa78c6c9c // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 

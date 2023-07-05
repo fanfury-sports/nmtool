@@ -34,7 +34,7 @@ func SwapIDCmd(cdc *codec.LegacyAmino) *cobra.Command {
 
 	nemoDeputies := map[string]sdk.AccAddress{}
 	for k, v := range nemoDeputiesStrings {
-		nemoDeputies[k] = mustNemoAccAddressFromBech32(v)
+		nemoDeputies[k] = mustFuryAccAddressFromBech32(v)
 	}
 	bnbDeputies := map[string]binance.AccAddress{}
 	for k, v := range bnbDeputiesStrings {
@@ -61,23 +61,23 @@ The original sender and deputy address cannot be from the same chain.
 			}
 
 			// try and decode the bech32 address as either nemo or bnb
-			addressNemo, errNemo := sdk.AccAddressFromBech32(args[1])
+			addressFury, errNemo := sdk.AccAddressFromBech32(args[1])
 			addressBnb, errBnb := binance.AccAddressFromBech32(args[1])
 
 			// fail if both decoding failed
-			isNemoAddress := errNemo == nil && errBnb != nil
+			isFuryAddress := errNemo == nil && errBnb != nil
 			isBnbAddress := errNemo != nil && errBnb == nil
-			if !isNemoAddress && !isBnbAddress {
+			if !isFuryAddress && !isBnbAddress {
 				return fmt.Errorf("can't unmarshal original sender address as either nemo or bnb: (%s) (%s)", errNemo.Error(), errBnb.Error())
 			}
 
 			// calculate swap IDs
 			depArg := args[2]
 			var swapIDNemo, swapIDBnb []byte
-			if isNemoAddress {
+			if isFuryAddress {
 				// check sender isn't a deputy
 				for _, dep := range nemoDeputies {
-					if addressNemo.Equals(dep) {
+					if addressFury.Equals(dep) {
 						return fmt.Errorf("original sender address cannot be deputy address: %s", dep)
 					}
 				}
@@ -91,8 +91,8 @@ The original sender and deputy address cannot be from the same chain.
 					}
 				}
 				// calc ids
-				swapIDNemo = types.CalculateSwapID(randomNumberHash, addressNemo, bnbDeputy.String())
-				swapIDBnb = binance.CalculateSwapID(randomNumberHash, bnbDeputy, addressNemo.String())
+				swapIDNemo = types.CalculateSwapID(randomNumberHash, addressFury, bnbDeputy.String())
+				swapIDBnb = binance.CalculateSwapID(randomNumberHash, bnbDeputy, addressFury.String())
 			} else {
 				// check sender isn't a deputy
 				for _, dep := range bnbDeputies {
@@ -138,7 +138,7 @@ func formatResults(swapIDNemo, swapIDBnb []byte) (string, error) {
 	return string(bz), err
 }
 
-func mustNemoAccAddressFromBech32(address string) sdk.AccAddress {
+func mustFuryAccAddressFromBech32(address string) sdk.AccAddress {
 	a, err := sdk.AccAddressFromBech32(address)
 	if err != nil {
 		panic(err)
