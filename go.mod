@@ -7,15 +7,13 @@ require (
 	github.com/Jeffail/gabs/v2 v2.6.0
 	github.com/cenkalti/backoff/v4 v4.1.3
 	github.com/cosmos/cosmos-sdk v0.46.11
-	github.com/kava-labs/go-tools v0.0.0-20221224222255-39c4be283202
-	github.com/kava-labs/kava v0.23.0
 	github.com/incubus-network/nemo v0.1.3
+	github.com/kava-labs/go-tools v0.0.0-20221224222255-39c4be283202
 	github.com/otiai10/copy v1.6.0
 	github.com/spf13/cobra v1.6.1
 	github.com/tendermint/classic v0.0.0-20201012085102-0a11024b2668
 	github.com/tendermint/tendermint v0.34.27
 	google.golang.org/grpc v1.53.0
-	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -111,7 +109,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/compress v1.15.15 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
-	github.com/linxGnu/grocksdb v1.7.14 // indirect
+	github.com/linxGnu/grocksdb v1.7.15 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/mattn/go-isatty v0.0.17 // indirect
@@ -176,6 +174,7 @@ require (
 	google.golang.org/protobuf v1.28.2-0.20230208135220-49eaa78c6c9c // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
